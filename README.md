@@ -22,3 +22,20 @@ This repository contains a Spring-based microservice architecture with the follo
 - Docker Compose for Simplified Deployment: Docker Compose is used to manage the deployment and orchestration of the microservices, making it easy to set up and run the entire system in a local or production environment.
 - Scalable and Resilient System Design: The architecture is designed with scalability and resilience in mind, allowing easy horizontal scaling and ensuring fault tolerance through redundant services.
 - Comprehensive Service Monitoring and Logging: The system is equipped with tools for monitoring, logging, and tracing, ensuring transparency and making it easier to diagnose and resolve issues in production environments.
+
+## Dependencies:
+- Spring Boot: The core framework for building microservices in Java, providing essential features like embedded servers, auto-configuration, and production-ready capabilities.
+- Spring Cloud Config: Centralized configuration management that allows for externalized configuration across microservices.
+- Spring Cloud Gateway: A non-blocking API gateway used for routing requests, load balancing, and handling security.
+- Spring Cloud Eureka: Service discovery for registering and discovering microservices, enabling dynamic service resolution.
+- Spring Cloud Zipkin: Distributed tracing solution to monitor and troubleshoot requests as they travel through various microservices.
+- Spring Security: A comprehensive security framework for authenticating and authorizing requests, securing APIs, and protecting sensitive data in the User Service.
+- Spring Data JPA: Simplifies data access using JPA (Java Persistence API) to interact with relational databases, such as PostgreSQL.
+- PostgreSQL: A robust, open-source relational database system used to store data in a transactional manner.
+- Docker: Platform for building and running containers, enabling easy deployment of microservices with Docker Compose.
+- Docker Compose: A tool for defining and running multi-container Docker applications, used to orchestrate microservices and their dependencies.
+- Lombok: A Java library used to reduce boilerplate code by generating getters, setters, constructors, and other commonly used methods at compile-time.
+- Spring Boot DevTools: Provides development-time features like automatic restarts, live reload, and enhanced debugging support.
+- Spring Boot Actuator: Adds production-ready features to Spring Boot applications, such as health checks, metrics, and monitoring endpoints.
+
+
