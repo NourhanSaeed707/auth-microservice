@@ -37,5 +37,10 @@ This repository contains a Spring-based microservice architecture with the follo
 - Lombok: A Java library used to reduce boilerplate code by generating getters, setters, constructors, and other commonly used methods at compile-time.
 - Spring Boot DevTools: Provides development-time features like automatic restarts, live reload, and enhanced debugging support.
 - Spring Boot Actuator: Adds production-ready features to Spring Boot applications, such as health checks, metrics, and monitoring endpoints.
+  
+## Getting Started
+pull clone git url project
+run mvn dependencies
+run project
 
 
