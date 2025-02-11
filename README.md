@@ -39,8 +39,8 @@ This repository contains a Spring-based microservice architecture with the follo
 - Spring Boot Actuator: Adds production-ready features to Spring Boot applications, such as health checks, metrics, and monitoring endpoints.
   
 ## Getting Started
-pull clone git url project
-run mvn dependencies
-run project
+- pull clone git url project
+- run mvn dependencies
+- run project
 
 
