@@ -24,16 +24,6 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        System.out.println("insiiiiiiiiid securiiiity config produuct");
-//        http
-//                .csrf(csrf -> csrf.disable()) // Disable CSRF
-//                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Stateless session
-//                .authorizeHttpRequests(auth -> auth
-//                        .anyRequest().permitAll() // Permit all requests (Modify this based on your security needs)
-//                )
-//                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-//
-//        return http.build();
         http
                 .csrf(csrf -> csrf.disable()) // Disable CSRF
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Stateless session
@@ -41,11 +31,8 @@ public class SecurityConfig {
 //                        .requestMatchers("/api/v1/products/**").authenticated() // Protect products API
                         .anyRequest().permitAll() // Allow other requests
                 )
-//                .formLogin(form -> form.disable())
-//                .httpBasic(basic -> basic.disable())
                 .authenticationManager(authenticationManager(http))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-        System.out.println("beeeeeeeeeeeefore reeeturn");
         return http.build();
     }
 
@@ -53,7 +40,6 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
         AuthenticationManagerBuilder authenticationManagerBuilder =
                 http.getSharedObject(AuthenticationManagerBuilder.class);
-        System.out.println("auth buiiiilder: " + authenticationManagerBuilder);
         return authenticationManagerBuilder.build();
     }
 
